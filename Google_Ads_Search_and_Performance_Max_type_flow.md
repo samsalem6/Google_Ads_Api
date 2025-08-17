@@ -1,4 +1,4 @@
-#🔹 1. Search Campaign Flow
+# 1. Search Campaign Flow
 ### Step 1: Campaign Settings
 
 Campaign name
@@ -59,7 +59,7 @@ Review campaign summary
 
 Save & Publish
 
-#🔹 2. Performance Max Campaign Flow
+# 2. Performance Max Campaign Flow
 ### Step 1: Campaign Settings
 
 Campaign name
