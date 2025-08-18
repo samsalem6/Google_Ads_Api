@@ -6,10 +6,10 @@
 
 - Campaign type = Search
 
-### Note:
-- After choosing a campaign goal (e.g. Sales, Leads, Website Traffic), Google Ads asks:
+### Note: 
+After choosing a campaign goal (e.g. Sales, Leads, Website Traffic), Google Ads asks:
 
-“Select the ways you’d like to reach your goal”
+- “Select the ways you’d like to reach your goal”
 👉 This is basically where you choose the conversion sources / actions relevant to the goal.
 
 Available options in the UI:
@@ -147,9 +147,9 @@ Available options in the UI:
 - Goal selection: Sales, Leads, Website Traffic, etc.
 
 ### Note:
-- After choosing a campaign goal (e.g. Sales, Leads, Website Traffic), Google Ads asks:
+After choosing a campaign goal (e.g. Sales, Leads, Website Traffic), Google Ads asks:
 
-“Select the ways you’d like to reach your goal”
+- “Select the ways you’d like to reach your goal”
 👉 This is basically where you choose the conversion sources / actions relevant to the goal.
 
 Available options in the UI:
