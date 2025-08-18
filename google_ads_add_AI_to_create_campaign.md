@@ -2,27 +2,27 @@
 
 ## Step 1: Campaign Settings
 
-Campaign name
+- Campaign name
 
-Campaign type = Search
+- Campaign type = Search
 
-Select the ways you'd like to reach your goal (website visites (with input for the link of website) - Store visits)
+- 👉 Select ways to reach your goal (website visits, phone calls, store visits, app installs)
 
-Networks: Search Network, Display Network (toggle)
+- Networks: Search Network, Display Network (toggle)
 
-Start / End dates
+- Start / End dates
 
-Ad schedule: days, hours
+- Ad schedule: days, hours
 
-Locations: country, region, radius targeting
+- Locations: country, region, radius targeting
 
-Languages
+- Languages
 
-Bidding strategy: Manual CPC, Maximize Clicks, Maximize Conversions, Target CPA, Target ROAS
+- Bidding strategy: Manual CPC, Maximize Clicks, Maximize Conversions, Target CPA, Target ROAS
 
-Final URL expansion (on/off)
+- Final URL expansion (on/off)
 
-Tracking template (optional)
+- Tracking template (optional)
 
 ### ### AI enhancement:
 
@@ -30,11 +30,11 @@ RecommendationService → suggest networks, bidding strategies, schedules based 
 
 ## Step 2: Conversion Tracking (optional)
 
-Conversion actions: import from GA4 or create new (website, call, app, offline)
+- Conversion actions: import from GA4 or create new (website, call, app, offline)
 
-Include in Conversions toggle
+- Include in Conversions toggle
 
-Attribution model: Last Click, Data-Driven, Position-Based, Linear, etc.
+- Attribution model: Last Click, Data-Driven, Position-Based, Linear, etc.
 
 ### ### AI enhancement:
 
@@ -42,25 +42,25 @@ RecommendationService → suggest optimal conversion goals based on account data
 
 ## Step 3: Audience & Keywords
 
-Audiences:
+- Audiences:
 
-In-market segments
+- In-market segments
 
-Remarketing lists
+- Remarketing lists
 
-Custom segments
+- Custom segments
 
-Import from GA4 (user lists, predictive audiences)
+- Import from GA4 (user lists, predictive audiences)
 
-Keywords:
+- Keywords:
 
-Manual entry
+- Manual entry
 
-Upload file
+- Upload file
 
-KeywordPlanIdeaService → suggestions from website or seed term
+- KeywordPlanIdeaService → suggestions from website or seed term
 
-Match types: Broad, Phrase, Exact
+- Match types: Broad, Phrase, Exact
 
 ### ### AI enhancement:
 
@@ -68,189 +68,191 @@ RecommendationService → suggest relevant in-market/custom segments.
 
 ## Step 4: Ad Groups
 
-Ad group name
+- Ad group name
 
-Default max CPC bid
+- Default max CPC bid
 
-Keywords (clustered by theme)
+- Keywords (clustered by theme)
 
 ### ### AI enhancement:
 
-Keyword clustering + bid adjustments auto-suggested via KeywordPlanIdeaService + Recommendations.
+- Keyword clustering + bid adjustments auto-suggested via KeywordPlanIdeaService + Recommendations.
 
 ## Step 5: Responsive Search Ads (RSA)
 
-Final URL
+- Final URL
 
-Display path (2 optional fields)
+- Display path (2 optional fields)
 
-Headlines (up to 15)
+- Headlines (up to 15)
 
-Descriptions (up to 4)
+- Descriptions (up to 4)
 
-Business name
+- Business name
 
-Ad strength meter
+- Ad strength meter
 
-Extensions: Sitelinks, Callouts, Snippets, Calls, Lead Forms, Price, Promotion
+- Extensions: Sitelinks, Callouts, Snippets, Calls, Lead Forms, Price, Promotion
 
 ### AI enhancement:
 
-SmartCampaignSuggestService.SuggestSmartCampaignAd → generate headlines + descriptions
+- SmartCampaignSuggestService.SuggestSmartCampaignAd → generate headlines + descriptions
 
-RecommendationService → generate sitelinks, callouts, snippets.
+- RecommendationService → generate sitelinks, callouts, snippets.
 
 ## Step 6: Budget Recommendations
 
-Daily budget (micros)
+- Daily budget (micros)
 
-Show range: Low, Recommended, High
+- Show range: Low, Recommended, High
 
 ### AI enhancement:
 
-GenerateRecommendations → recommend budget & bid strategy after keywords/audience/ad setup.
+- GenerateRecommendations → recommend budget & bid strategy after keywords/audience/ad setup.
 
 ## Step 7: Review & Publish
 
-Review summary (settings, ads, keywords, budget)
+- Review summary (settings, ads, keywords, budget)
 
-Fix alerts (missing conversions, low budget, too few assets)
+- Fix alerts (missing conversions, low budget, too few assets)
 
-Publish
+- Publish
 
 ### AI enhancement:
 
-RecommendationService final scan: “Add more headlines”, “Increase budget”, “Add sitelinks”.
+- RecommendationService final scan: “Add more headlines”, “Increase budget”, “Add sitelinks”.
 
 # AI-Enhanced Performance Max Campaign Flow (Full Fields)
 
 ## Step 1: Campaign Settings
 
-Campaign name
+- Campaign name
 
-Type = Performance Max
+- Type = Performance Max
 
-Goal selection: Sales, Leads, Website Traffic, etc.
+- Goal selection: Sales, Leads, Website Traffic, etc.
 
-Bidding strategy: Maximize Conversions, Maximize Conversion Value, Target CPA, Target ROAS
+- 👉 Select ways to reach your goal (website visits, phone calls, store visits, app installs)
 
-Start / End dates
+- Bidding strategy: Maximize Conversions, Maximize Conversion Value, Target CPA, Target ROAS
 
-Ad schedule
+- Start / End dates
 
-Locations (geo targeting)
+- Ad schedule
 
-Languages
+- Locations (geo targeting)
 
-URL expansion (on/off)
+- Languages
 
-Tracking template (optional)
+- URL expansion (on/off)
+
+- Tracking template (optional)
 
 ### AI enhancement:
 
-RecommendationService → suggest goal/bid combos.
+- RecommendationService → suggest goal/bid combos.
 
 ## Step 2: Asset Groups
 
-Asset group name
+- Asset group name
 
-Final URLs (multiple allowed)
+- Final URLs (multiple allowed)
 
-Headlines (up to 15)
+- Headlines (up to 15)
 
-Descriptions (up to 5)
+- Descriptions (up to 5)
 
-Long headline
+- Long headline
 
-Business name
+- Business name
 
-Logos
+- Logos
 
-Images
+- Images
 
-Videos (upload or let Google auto-generate)
+- Videos (upload or let Google auto-generate)
 
-Call-to-action text
+- Call-to-action text
 
-Ad strength meter
+- Ad strength meter
 
 ### AI enhancement:
 
-SmartCampaignSuggestService → generate ad text
+- SmartCampaignSuggestService → generate ad text
 
-AI auto-pull images/videos from website/YouTube
+- AI auto-pull images/videos from website/YouTube
 
-KeywordPlanIdeaService → recommend asset group structure.
+- KeywordPlanIdeaService → recommend asset group structure.
 
 ## Step 3: Audience Signals
 
-Custom segments
+- Custom segments
 
-Custom intent (keywords)
+- Custom intent (keywords)
 
-Demographics: age, gender, parental status, income
+- Demographics: age, gender, parental status, income
 
-Customer lists
+- Customer lists
 
-GA4 imports: predictive audiences, custom GA4 segments
+- GA4 imports: predictive audiences, custom GA4 segments
 
 ### AI enhancement:
 
-RecommendationService → suggest audience signals based on vertical.
+- RecommendationService → suggest audience signals based on vertical.
 
 ## Step 4: Extensions
 
-Sitelinks
+- Sitelinks
 
-Callouts
+- Callouts
 
-Snippets
+- Snippets
 
-Call extension
+- Call extension
 
-Lead form
+- Lead form
 
-Price extension
+- Price extension
 
-Promotion extension
+- Promotion extension
 
 ### AI enhancement:
 
-RecommendationService → suggest which extensions to add
+- RecommendationService → suggest which extensions to add
 
-Auto-generate sitelinks from navigation structure.
+- Auto-generate sitelinks from navigation structure.
 
 ## Step 5: Budget Recommendations
 
-Daily budget
+- Daily budget
 
-Recommended range: Low, Recommended, High
+- Recommended range: Low, Recommended, High
 
 ### AI enhancement:
 
-GenerateRecommendations after assets + audiences are defined.
+- GenerateRecommendations after assets + audiences are defined.
 
 ## Step 6: Review & Publish
 
-Campaign summary (settings, budget, ads, assets, targeting)
+- Campaign summary (settings, budget, ads, assets, targeting)
 
-Fix alerts (missing extensions, low budget, weak ad strength)
+- Fix alerts (missing extensions, low budget, weak ad strength)
 
-Publish campaign
+- Publish campaign
 
 ### AI enhancement:
 
-RecommendationService → flag issues before launch.
+- RecommendationService → flag issues before launch.
 
 ## Step 7: Post-Launch Optimization
 
-Realtime reporting
+- Realtime reporting
 
-GA4 linking → conversion data + audience expansion
+- GA4 linking → conversion data + audience expansion
 
-RecommendationService → continuous optimizations (budget adjustments, add assets, broaden targeting)
+- RecommendationService → continuous optimizations (budget adjustments, add assets, broaden targeting)
 
-Experimentation: run A/B or geo experiments.
+- Experimentation: run A/B or geo experiments.
 
 ## ✅ Key Enhancements Summary
 
