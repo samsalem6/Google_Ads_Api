@@ -6,7 +6,21 @@
 
 - Campaign type = Search
 
-- 👉 Select ways to reach your goal (website visits, phone calls, store visits, app installs)
+### Note:
+- After choosing a campaign goal (e.g. Sales, Leads, Website Traffic), Google Ads asks:
+
+“Select the ways you’d like to reach your goal”
+👉 This is basically where you choose the conversion sources / actions relevant to the goal.
+
+Available options in the UI:
+
+🌐 Website visits → Enter website URL(s) (usually GA4 linked, tracks conversions like purchases, sign-ups, etc.)
+
+📞 Phone calls → Add call extensions or call tracking numbers
+
+📍 Store visits → If linked with Business Profile
+
+🛒 App downloads → From Google Play / App Store (if app campaign)
 
 - Networks: Search Network, Display Network (toggle)
 
@@ -132,7 +146,21 @@
 
 - Goal selection: Sales, Leads, Website Traffic, etc.
 
-- 👉 Select ways to reach your goal (website visits, phone calls, store visits, app installs)
+### Note:
+- After choosing a campaign goal (e.g. Sales, Leads, Website Traffic), Google Ads asks:
+
+“Select the ways you’d like to reach your goal”
+👉 This is basically where you choose the conversion sources / actions relevant to the goal.
+
+Available options in the UI:
+
+🌐 Website visits → Enter website URL(s) (usually GA4 linked, tracks conversions like purchases, sign-ups, etc.)
+
+📞 Phone calls → Add call extensions or call tracking numbers
+
+📍 Store visits → If linked with Business Profile
+
+🛒 App downloads → From Google Play / App Store (if app campaign)
 
 - Bidding strategy: Maximize Conversions, Maximize Conversion Value, Target CPA, Target ROAS
 
