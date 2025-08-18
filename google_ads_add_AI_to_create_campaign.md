@@ -26,7 +26,7 @@
 
 ### ### AI enhancement:
 
-RecommendationService → suggest networks, bidding strategies, schedules based on industry benchmarks.
+- RecommendationService → suggest networks, bidding strategies, schedules based on industry benchmarks.
 
 ## Step 2: Conversion Tracking (optional)
 
@@ -38,7 +38,7 @@ RecommendationService → suggest networks, bidding strategies, schedules based 
 
 ### ### AI enhancement:
 
-RecommendationService → suggest optimal conversion goals based on account data.
+- RecommendationService → suggest optimal conversion goals based on account data.
 
 ## Step 3: Audience & Keywords
 
@@ -64,7 +64,7 @@ RecommendationService → suggest optimal conversion goals based on account data
 
 ### ### AI enhancement:
 
-RecommendationService → suggest relevant in-market/custom segments.
+- RecommendationService → suggest relevant in-market/custom segments.
 
 ## Step 4: Ad Groups
 
