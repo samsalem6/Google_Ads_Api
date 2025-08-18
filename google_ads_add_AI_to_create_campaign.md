@@ -1,224 +1,276 @@
-# AI-Enhanced Campaign Flows (Updated with Full Google Ads Form Fields)
+# AI-Enhanced Search Campaign Flow (Full Fields)
 
-## Search Campaign – Full AI-Enhanced Flow
+## Step 1: Campaign Settings
 
-### Step 1: Campaign Settings
+Campaign name
 
-Campaign name (text)
+Campaign type = Search
 
-Campaign type: Search
+Select the ways you'd like to reach your goal (website visites (with input for the link of website) - Store visits)
 
-Goal selection (optional: Sales, Leads, Website traffic, No goal)
+Networks: Search Network, Display Network (toggle)
 
-Networks:
+Start / End dates
 
-Include Google Search Partners (checkbox)
+Ad schedule: days, hours
 
-Include Display Network (checkbox)
+Locations: country, region, radius targeting
 
-Locations:
+Languages
 
-Country / region / radius targeting
-
-Advanced options (Presence, Interest)
-
-Languages (multi-select)
-
-Start date / End date (date picker)
-
-Ad schedule (dayparting grid)
-
-### Step 2: Conversion Tracking
-
-Link conversion actions (choose existing or create new)
-
-Import conversions from GA4 (if linked)
-
-Create new conversion (button)
-
-### Step 3: Audience Targeting (AI-Enhanced)
-
-Audience segments (in-market, affinity, remarketing, demographics)
-
-Custom audiences (keywords, URLs, apps, interests)
-
-Exclusions (audiences to exclude)
-
-Observation vs. Targeting (radio)
-
-🔗 GA4 Integration: Select from linked GA4 audiences (remarketing lists, custom audiences, predictive audiences)
-
-### Step 4: Keywords
-
-Keyword entry box (multi-line)
-
-Keyword match type selectors (Broad, Phrase, Exact)
-
-AI keyword suggestions (auto-suggested)
-
-Negative keywords (optional entry)
-
-### Step 5: Ad Groups
-
-Ad group name (text)
-
-Default max CPC bid (numeric)
-
-Keyword list (group-level)
-
-### Step 6: Responsive Search Ads (AI-Generated)
-
-Final URL (text)
-
-Display path (2 optional fields)
-
-Headlines (up to 15, AI-suggested + editable)
-
-Descriptions (up to 4, AI-suggested + editable)
-
-Business name (text)
-
-Mobile URL (optional)
-
-Ad strength meter (auto-calculated)
-
-### Step 7: Extensions
-
-Sitelink extensions (headline, URL, 2 optional descriptions)
-
-Callout extensions (25-char snippets)
-
-Structured snippets (header + values)
-
-Call extensions (phone)
-
-Lead form extensions (form fields, CTA)
-
-Price extensions (service, price, URL)
-
-Promotion extensions (discount, code, URL)
-
-### Step 8: Budget & Bidding (AI Recommendations)
-
-Daily budget (numeric, with AI-recommended ranges based on audience, targeting, and goals)
-
-Bidding strategy:
-
-Maximize clicks
-
-Maximize conversions
-
-Maximize conversion value
-
-Target CPA / ROAS
-
-Optional: Portfolio bid strategy
-
-### Step 9: Review & Publish
-
-Campaign summary
-
-AI recommendations (budget adjustment, keyword refinement, audience expansion)
-
-Save & Publish
-
-## Performance Max Campaign – Full AI-Enhanced Flow
-
-### Step 1: Campaign Settings
-
-Campaign name (text)
-
-Campaign type: Performance Max
-
-Goal selection (Sales, Leads, Store visits, etc.)
-
-Bidding strategy:
-
-Maximize conversions
-
-Maximize conversion value
-
-With optional target CPA / ROAS
-
-Daily budget (numeric, AI-recommended)
-
-Start / End dates (date picker)
-
-Locations (geo targeting)
-
-Languages (multi-select)
+Bidding strategy: Manual CPC, Maximize Clicks, Maximize Conversions, Target CPA, Target ROAS
 
 Final URL expansion (on/off)
 
 Tracking template (optional)
 
-### Step 2: Asset Groups (AI-Powered Asset Generation)
+### ### AI enhancement:
 
-Asset group name (text)
+RecommendationService → suggest networks, bidding strategies, schedules based on industry benchmarks.
 
-Final URL (text)
+## Step 2: Conversion Tracking (optional)
 
-Headlines (up to 15, AI-generated + editable)
+Conversion actions: import from GA4 or create new (website, call, app, offline)
 
-Long headlines (up to 5, AI-generated)
+Include in Conversions toggle
 
-Descriptions (up to 5, AI-generated)
+Attribution model: Last Click, Data-Driven, Position-Based, Linear, etc.
 
-Business name (text)
+### ### AI enhancement:
 
-Logos (upload 1:1, 4:1)
+RecommendationService → suggest optimal conversion goals based on account data.
 
-Images (upload square, landscape, portrait, AI auto-generate if missing)
+## Step 3: Audience & Keywords
 
-Videos (YouTube link or AI auto-generated video)
+Audiences:
 
-Call-to-action text (dropdown: Shop now, Apply now, etc.)
+In-market segments
 
-### Step 3: Audience Signals (GA4 + AI)
+Remarketing lists
 
-Custom segments (keywords, URLs, apps)
+Custom segments
 
-Customer lists (uploads)
+Import from GA4 (user lists, predictive audiences)
 
-Remarketing audiences (GA4 linked lists)
+Keywords:
 
-Interests/demographics
+Manual entry
 
-AI audience expansion (suggest new audience signals based on GA4 + campaign goals)
+Upload file
 
-### Step 4: Extensions
+KeywordPlanIdeaService → suggestions from website or seed term
 
-Sitelink extensions
+Match types: Broad, Phrase, Exact
 
-Callout extensions
+### ### AI enhancement:
 
-Structured snippets
+RecommendationService → suggest relevant in-market/custom segments.
 
-Call extensions
+## Step 4: Ad Groups
 
-Lead forms
+Ad group name
 
-Promotions
+Default max CPC bid
 
-Prices
+Keywords (clustered by theme)
 
-### Step 5: Budget & Bidding (AI Recommendations)
+### ### AI enhancement:
 
-Daily budget (with AI recommendation based on assets and goals)
+Keyword clustering + bid adjustments auto-suggested via KeywordPlanIdeaService + Recommendations.
 
-Bidding strategy (Max conversions, Max conversion value, target CPA/ROAS)
+## Step 5: Responsive Search Ads (RSA)
 
-### Step 6: Review & Publish
+Final URL
 
-AI campaign performance forecast
+Display path (2 optional fields)
 
-Campaign summary
+Headlines (up to 15)
 
-Recommendations for optimization (creative, budget, targeting)
+Descriptions (up to 4)
 
-Save & Publish
+Business name
 
-✅ With this enhanced flow:
+Ad strength meter
+
+Extensions: Sitelinks, Callouts, Snippets, Calls, Lead Forms, Price, Promotion
+
+### AI enhancement:
+
+SmartCampaignSuggestService.SuggestSmartCampaignAd → generate headlines + descriptions
+
+RecommendationService → generate sitelinks, callouts, snippets.
+
+## Step 6: Budget Recommendations
+
+Daily budget (micros)
+
+Show range: Low, Recommended, High
+
+### AI enhancement:
+
+GenerateRecommendations → recommend budget & bid strategy after keywords/audience/ad setup.
+
+## Step 7: Review & Publish
+
+Review summary (settings, ads, keywords, budget)
+
+Fix alerts (missing conversions, low budget, too few assets)
+
+Publish
+
+### AI enhancement:
+
+RecommendationService final scan: “Add more headlines”, “Increase budget”, “Add sitelinks”.
+
+# AI-Enhanced Performance Max Campaign Flow (Full Fields)
+
+## Step 1: Campaign Settings
+
+Campaign name
+
+Type = Performance Max
+
+Goal selection: Sales, Leads, Website Traffic, etc.
+
+Bidding strategy: Maximize Conversions, Maximize Conversion Value, Target CPA, Target ROAS
+
+Start / End dates
+
+Ad schedule
+
+Locations (geo targeting)
+
+Languages
+
+URL expansion (on/off)
+
+Tracking template (optional)
+
+### AI enhancement:
+
+RecommendationService → suggest goal/bid combos.
+
+## Step 2: Asset Groups
+
+Asset group name
+
+Final URLs (multiple allowed)
+
+Headlines (up to 15)
+
+Descriptions (up to 5)
+
+Long headline
+
+Business name
+
+Logos
+
+Images
+
+Videos (upload or let Google auto-generate)
+
+Call-to-action text
+
+Ad strength meter
+
+### AI enhancement:
+
+SmartCampaignSuggestService → generate ad text
+
+AI auto-pull images/videos from website/YouTube
+
+KeywordPlanIdeaService → recommend asset group structure.
+
+## Step 3: Audience Signals
+
+Custom segments
+
+Custom intent (keywords)
+
+Demographics: age, gender, parental status, income
+
+Customer lists
+
+GA4 imports: predictive audiences, custom GA4 segments
+
+### AI enhancement:
+
+RecommendationService → suggest audience signals based on vertical.
+
+## Step 4: Extensions
+
+Sitelinks
+
+Callouts
+
+Snippets
+
+Call extension
+
+Lead form
+
+Price extension
+
+Promotion extension
+
+### AI enhancement:
+
+RecommendationService → suggest which extensions to add
+
+Auto-generate sitelinks from navigation structure.
+
+## Step 5: Budget Recommendations
+
+Daily budget
+
+Recommended range: Low, Recommended, High
+
+### AI enhancement:
+
+GenerateRecommendations after assets + audiences are defined.
+
+## Step 6: Review & Publish
+
+Campaign summary (settings, budget, ads, assets, targeting)
+
+Fix alerts (missing extensions, low budget, weak ad strength)
+
+Publish campaign
+
+### AI enhancement:
+
+RecommendationService → flag issues before launch.
+
+## Step 7: Post-Launch Optimization
+
+Realtime reporting
+
+GA4 linking → conversion data + audience expansion
+
+RecommendationService → continuous optimizations (budget adjustments, add assets, broaden targeting)
+
+Experimentation: run A/B or geo experiments.
+
+## ✅ Key Enhancements Summary
+
+| Step                | Search AI Plug                               | PMax AI Plug                                |
+|----------------------|----------------------------------------------|--------------------------------------------|
+| Campaign Settings    | RecommendationService                        | RecommendationService                      |
+| Conversion Tracking  | RecommendationService                        | —                                          |
+| Audience & Keywords  | KeywordPlanIdeaService, RecommendationService | RecommendationService, GA4 import         |
+| Ad Text / Assets     | SmartCampaignSuggestService                  | SmartCampaignSuggestService                |
+| Audiences            | RecommendationService, GA4 import            | RecommendationService, GA4 import          |
+| Extensions           | RecommendationService                        | RecommendationService                      |
+| Budget               | GenerateRecommendations                      | GenerateRecommendations                    |
+| Review               | RecommendationService                        | RecommendationService                      |
+| Post-Launch          | —                                            | RecommendationService, Experiments         |
+
+
+
+## ⚡ With this, your flow mirrors the Google Ads UI step for step, including all fields + AI injections + GA4 audience integration.
+
+## ✅ With this enhanced flow:
 
 - Search Campaigns → More manual but AI assists in keywords, ads, and budgets.
 
