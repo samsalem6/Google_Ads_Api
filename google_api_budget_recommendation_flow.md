@@ -1,3 +1,58 @@
+# How Google Ads Recommends Budgets
+
+Keyword Plan Forecasts
+
+When you add keywords, Google Ads runs forecasts (via KeywordPlanIdeaService + KeywordPlanService).
+
+It estimates impressions, clicks, conversions, and CPC ranges.
+
+These forecasts are tied to location, language, bidding strategy, and conversion goals you’ve selected earlier.
+
+Auction Competition Data
+
+Google looks at how competitive the keywords are in your chosen locations and languages.
+
+If your keywords are expensive, Google recommends higher budgets to stay competitive.
+
+Bidding Strategy
+
+If you picked Manual CPC, budgets are suggested based on average CPC × estimated clicks.
+
+If you picked Maximize Conversions or Target CPA, Google adjusts budget recommendations based on conversion forecasts.
+
+Historical & Account Data (if available)
+
+If your account has past campaigns with similar goals/keywords, Google uses that to refine recommendations.
+
+# What Google Ads Actually Shows
+
+At the final step (before publish), the UI shows something like:
+
+Recommended Daily Budget
+"To get around 200 clicks per week, we recommend:
+
+$10/day (low range)
+
+$25/day (balanced)
+
+$50/day (aggressive)"
+
+These are ranges, not a single number.
+
+# The Logic in Google Ads UI
+
+So the flow is like this:
+
+User sets keywords, locations, languages, bidding strategy.
+
+Google runs forecasts (impressions/clicks).
+
+Google Ads UI calls RecommendationService with campaign context.
+
+UI shows 3–4 budget options ("low", "recommended", "aggressive").
+
+User can override or accept.
+
 # Updated Search Campaign Flow with Budget Logic
 ## Step 1: Campaign Settings
 
